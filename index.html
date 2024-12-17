@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZE to USD and EUR</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Manatdan Dollara exchange</h1>
+    <h2 style="text-align: center;" id="exchange"></h2>
+
+
+    <script>
+        let azn = +prompt("Qədeş neçə manatun var diyirlər dollar qalxıcey avro da eyni")
+        let usd = azn*1.7
+        let eur = azn*2.0
+        let netice = ('Qərdeş ' + azn +'AZN çöndi oldu ' + usd + '$ və '+ azn + 'AZN çöndü oldu ' + eur + 'EURO')
+        document.getElementById('exchange').innerHTML = netice
+    </script>
+</body>
+</html>
